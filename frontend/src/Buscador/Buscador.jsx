@@ -62,7 +62,7 @@ function Buscador() {
         </div>
         
       ))}
-      <a href="https://www.example.com">Repositorio Github del Mini-Core</a>
+      <a href="https://github.com/calebdamian/minicore-express-react">Repositorio Github del Mini-Core</a>
     </div> 
   );
 }
