@@ -24,3 +24,21 @@ El objetivo es encontrar en un rango de fechas los contratos pertenecientes a ca
 
 4. Abra el siguiente link para visualizarlo [http://localhost:3000](http://localhost:3000) en el puerto localhost 3000 por defecto.
 
+## Información del MVC
+
+1.  [Express](https://expressjs.com/es)
+2.  [Mongo Db](https://www.mongodb.com/atlas/database)
+3.  [React](https://reactjs.org/)
+4.  [Creacion sencilla de proyectos react](https://create-react-app.dev/)
+
+### Tutoriales
+
+1. [Mern stack](https://www.youtube.com/watch?v=L1TjrOEG-u8)
+2. [Aplicacion CRUD completa con MERN](https://www.youtube.com/watch?v=W1Kttu53qTg)
+3. [Express](https://www.youtube.com/watch?v=lY6icfhap2o)
+4. [Curso Nodejs y Express](https://www.youtube.com/watch?v=1hpc70_OoAg)
+
+### Contacto
+
+* caleb.naranjo@udla.edu.ec
+* calalbuja@gmail.com
