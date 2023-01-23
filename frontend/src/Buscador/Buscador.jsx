@@ -27,7 +27,6 @@ function Buscador() {
   return (
     <div>
       <h1>Mini-Core  Caleb Naranjo</h1>
-      
       <h4>Establece fechas de Inicio y Fin para mostrar la información de los Clientes y sus respectivos Contratos</h4>
       <form onSubmit={handleSubmit}>
         <label>
@@ -50,12 +49,15 @@ function Buscador() {
       </form>
       {clientes.map(cliente => (
         <div key={cliente._id}>
-          <h2>{cliente.nombre}</h2>
-          <h3>Monto total de contratos: {cliente.total}</h3>
+          <h2>Nombre del cliente: {cliente.nombre}</h2>
+          <h3>Monto total de contratos: ${cliente.total}</h3>
+          <h5>
+            Fecha y monto de los contratos:
+          </h5>
           <ul>
             {cliente.contratos.map(contrato => (
               <li key={contrato._id}>
-                {new Date(contrato.fecha).toLocaleDateString()}: {contrato.monto}
+                {new Date(contrato.fecha).toISOString().split('T', 1)}: ${contrato.monto}
               </li>
             ))}
           </ul>
