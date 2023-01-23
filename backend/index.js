@@ -97,6 +97,16 @@ app.post('/clientes', async (req, res) => {
   }
 });
 
+app.get('/clientes', async (req, res) => {
+  try {
+   const clientes = await Cliente.find();
+
+    return res.status(200).json(clientes);
+  } catch (err) {
+    res.status(500).send(err);
+  }
+})
+
 app.post('/contratos', async (req, res) => {
   try {
     // Create a new Cliente document with the data from the request body
@@ -112,6 +122,16 @@ app.post('/contratos', async (req, res) => {
     res.status(500).send(err);
   }
 });
+
+
+app.get('/contratos', async (req, res) => {
+  try {
+    const contratos = await Contrato.find();
+    return res.status(200).json(contratos);
+  } catch (err) {
+    res.status(500).send(err);
+  }
+})
 
 
 
