@@ -26,7 +26,7 @@ const Contrato = mongoose.model('Contrato', ContratoSchema);
 const app = express();
 app.use(bodyParser.json());
 
-app.use(cors());
+app.use(cors({origin:['http://localhost:3000','https://minicore-cdna-api.onrender.com']}));
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
@@ -50,7 +50,7 @@ app.post('/buscar', async (req, res) => {
           as: "contratos"
         }
       },
-      { $unwind: "$contratos" },
+      { $unwind: "$contratos" }, 
       {
         $match: {
           "contratos.fecha": {
@@ -68,11 +68,8 @@ app.post('/buscar', async (req, res) => {
         }
       }
     ]);
-
-    // Enviar los resultados de la búsqueda como respuesta
     res.send({ clientes });
   } catch (err) {
-    // Enviar un error si algo falla
     res.status(500).send(err);
   }
 });

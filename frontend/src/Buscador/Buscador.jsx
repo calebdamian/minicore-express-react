@@ -17,7 +17,7 @@ function Buscador() {
 
     try {
       // Realizar una solicitud POST al servidor con las fechas de búsqueda
-      const response = await axios.post('http://localhost:8800/buscar', { fechaInicial, fechaFinal });
+      const response = await axios.post('https://minicore-cdna-api.onrender.com/buscar', { fechaInicial, fechaFinal });
       setClientes(response.data.clientes);
     } catch (err) {
       console.log(err);
