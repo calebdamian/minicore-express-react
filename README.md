@@ -2,6 +2,9 @@
 
 Este proyecto fue creado con express como backend y react como frontend
 
+![image](https://user-images.githubusercontent.com/63675970/214198516-ecf5f150-e721-4278-abf9-da0e73e7d353.png)
+
+
 ## Descripción del proyecto
 
 Se tienen dos tablas, una de contratos y otra de clientes, un cliente puede tener varios contratos.
